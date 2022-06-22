@@ -1,4 +1,4 @@
-const {BadRequestError,NotFoundError,ExpressError} = require("../utils/error")
+const {BadRequestError,NotFoundError,ExpressError} = require("../utils/errors")
 
 class GiftExchange {
   constructor() {}
