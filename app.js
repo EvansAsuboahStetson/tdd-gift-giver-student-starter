@@ -21,10 +21,10 @@ app.use((req, res, next) => {
 //Generic erroror handle
 
 app.use((error, req, res, next) => {
-    const status = error.status || 500 
+   const status = error.status || 400
     const message = error.message
     return res.status(status).json({
-        error: {message: message,status: status}
+        error: {message,status}
     })
 })
 

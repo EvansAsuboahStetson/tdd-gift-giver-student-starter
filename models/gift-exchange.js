@@ -6,7 +6,8 @@ class GiftExchange {
   static pairs(names) {
     if (names.length % 2 != 0) {
       throw new BadRequestError("names can't be odd.")
-    }
+      }
+      
 
     var bigarray = [];
     var array = [];
